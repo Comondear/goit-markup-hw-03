@@ -92,8 +92,6 @@ body {
   color: #2196f3;
 }
 .header-item {
-  padding-bottom: 25px;
-  padding-top: 25px;
   max-height: 80px;
 }
 
@@ -103,6 +101,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .header-link,
@@ -148,7 +148,11 @@ body {
 
 .topsection {
   background-color: #2f303a;
-  height: 600px;
+}
+
+.top-inside {
+  padding: 200px 285px 200px 285px;
+  flex-grow: 1;
 }
 
 .topsection-title {
@@ -158,16 +162,15 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 200px;
-  margin: 0 auto 30px;
   box-sizing: content-box;
   text-align: center;
-  max-width: 696px;
+  margin-bottom: 30px;
 }
 
 .topsection-button {
   font-family: inherit;
   font-size: 16px;
+  font-weight: 700;
   line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
@@ -179,13 +182,7 @@ body {
   border: 1px solid transparent;
   display: block;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 200px;
-}
-
-.top {
-  margin-bottom: 200px;
+  margin: auto;
 }
 
 /*----------------------------FEATURES------------------------*/
@@ -193,6 +190,9 @@ body {
 .features-list {
   display: flex;
   align-items: center;
+}
+
+.features-inside {
   padding-top: 95px;
   padding-bottom: 95px;
 }
@@ -224,6 +224,11 @@ body {
 
 /*----------------------------WWD-or-WHATWEDO------------------------*/
 
+.wwd-inside {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .wwd-title {
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -243,13 +248,22 @@ body {
   display: flex;
   align-items: center;
   margin-left: -30px;
-  margin-bottom: 95px;
 }
 
 /*----------------------------TEAM------------------------*/
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team-inside {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-who {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -260,14 +274,12 @@ body {
   box-sizing: content-box;
   text-align: center;
   margin-bottom: 50px;
-  padding-top: 95px;
 }
 
 .team-list {
   display: flex;
   align-items: center;
   margin-left: -30px;
-  padding-bottom: 95px;
 }
 
 .team-item {
@@ -287,7 +299,6 @@ body {
   color: var(--main-text-color);
   box-sizing: content-box;
   text-align: center;
-  margin-top: 30px;
 }
 
 .team-item-text {
@@ -299,7 +310,6 @@ body {
   box-sizing: content-box;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 /*----------------------------FOOTER------------------------*/
@@ -311,6 +321,11 @@ body {
   font-style: normal;
 }
 
+.footer-inside {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -320,7 +335,6 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   display: block;
-  padding-top: 60px;
 }
 
 .footer-item:not(:last-child) {
@@ -329,7 +343,6 @@ body {
 .footer-list {
   margin-top: 20px;
   display: block;
-  padding-bottom: 60px;
 }
 
 .footer-logo-blue {
@@ -375,6 +388,11 @@ body {
 
 /*----------------------------GALLERY------------------------*/
 
+.gallery-inside {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .gallery-buttons-list {
   display: flex;
   align-items: center;
@@ -395,10 +413,6 @@ body {
   padding: 6px 22px;
 }
 
-.gallery-buttons-item {
-  padding-top: 95px;
-}
-
 .gallery-buttons-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -407,13 +421,13 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: -30px;
+  margin: -15px;
   margin-bottom: 95px;
 }
 
 .gallery-item {
-  flex-basis: calc(100% / 3 - 60px);
-  margin: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
   border: 4px;
   border: 1px solid #eeeeee;
 }
@@ -422,12 +436,16 @@ body {
   max-width: 100%;
 }
 
+.gallery-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .gallery-item-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-top: 20px;
   margin-left: 25px;
 }
 
@@ -439,7 +457,6 @@ body {
   color: #757575;
   margin-top: 4px;
   margin-left: 25px;
-  margin-bottom: 20px;
 }
 
 .gallery-buttons-link:hover,
